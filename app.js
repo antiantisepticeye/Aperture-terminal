@@ -19,7 +19,7 @@ function startup() {
                 this.echo(image)
             },
             hello: function() {
-                
+                this.echo("Hello there! :)")
             }
         }, {
             checkArity: false,
