@@ -20,7 +20,7 @@ body {
     overflow: hidden;
 }
 
-.terminal {
+.terminal_ {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +38,7 @@ body {
 
 @media only screen and (max-width: calc(4/3 * 100vh)) {
     
-    .terminal {
+    .terminal_ {
         width: 100vw;
         height: calc(3/4 * 100vw);
     }
@@ -46,7 +46,7 @@ body {
 
 @media only screen and (min-width: calc(4/3 * 100vh)) {
     
-    .terminal {
+    .terminal_ {
         height: 100vh;
         width: calc(4/3 * 100vh);
     }
@@ -72,7 +72,7 @@ body {
     z-index: 2;
 }
 
-.text-area {
+.text-area_ {
     height: 90%;
     width: 90%;
     border: 3px solid rgba(134, 76, 0, 0.822);
@@ -102,5 +102,27 @@ body {
     100% {
         clip-path: inset(0 0 0 0)
     }
-  }
-  
+}
+
+
+
+.terminal, span, .cmd, div, .terminal-error {
+    --color: rgba(216, 122, 0, 0.966);
+    --error-color: rgba(175, 0, 38, 0.99);
+    --background: transparent;
+    font-family: 'VT323', monospace;
+}
+.terminal {
+    --size: 1.2;
+}
+.terminal-image {
+    max-width: 50vw;
+    max-height: 60vh;
+}
+@media only screen and (max-width: 600px) {
+    
+    .terminal-image {
+        max-width: 70vw;
+    }
+}
+
