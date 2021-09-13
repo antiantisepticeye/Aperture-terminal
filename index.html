@@ -7,23 +7,30 @@
     <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css">
     <title>Terminal - test</title>
     <link rel="stylesheet" href="styles.css">
+
+      
 </head>
 <body>
     <!-- Hello world -->
     <div class="terminal_">
+        <img src="./intro.webp" alt="aperture intro logo" class="aperture" style="display: none;">
         <div class="vignette"></div>
         <div class="noise"></div>
         <div class="text-area_">
-            
+            <div id="terminal-area"></div>
             <div class="initialize">
                 Initializing<div><span>.</span><span>.</span><span>.</span><span>.</span></div>
             </div>
+            <div class="created-by">-created by Anti</div>
+                    <div class="logo">
+            <img id="logo" src="./logo.png" alt="ui logo">
         </div>
+        </div>
+
+
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js">
-	</script>
-	<script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js">
-	</script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
     <script src="./app.js"></script>
 </body>
 </html>

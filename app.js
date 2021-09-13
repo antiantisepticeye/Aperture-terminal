@@ -1,7 +1,8 @@
 function startup() {
     $('.initialize').remove()
-    setInterval(() => {
-        $('.text-area_').terminal({
+    $(document.querySelector('.aperture')).show()
+    setTimeout(() => {
+        const term = $('#terminal-area').terminal({
             cat: async function() {
                 this.pause()
                 response = await fetch("https://api.thecatapi.com/v1/images/search")
@@ -23,14 +24,16 @@ function startup() {
             }
         }, {
             checkArity: false,
-            greetings: `Anti's Terminal v0.0.1.\n`,
+            greetings: 'Aperture Sciences Terminal v0.0.1\n',
             completion: false,
             convertLinks:false,
             prompt:"$ "
         })
-    }, 500)        
+    }, 3000)        
 }
 
 
-setInterval(startup, Math.floor(Math.random() *3000))
+$(document.querySelector('.aperture')).hide()
+
+setTimeout(startup, Math.floor(Math.random() *3000))
 
