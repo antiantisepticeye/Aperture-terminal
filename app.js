@@ -35,5 +35,5 @@ function startup() {
 
 $(document.querySelector('.aperture')).hide()
 
-setTimeout(startup, Math.floor(Math.random() *3000))
+setTimeout(startup, Math.floor(Math.random() *2000) + 2000)
 
