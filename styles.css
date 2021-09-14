@@ -120,7 +120,7 @@ body {
 
 .terminal, span, .cmd, div, .terminal-error {
     --color: rgba(216, 122, 0, 0.966);
-    --error-color: rgb(182, 0, 0);
+    --error-color: #af0020;
     --background: transparent;
     font-family: 'VT323', monospace;
 }
@@ -176,6 +176,33 @@ body {
 #logo {
     opacity: 70%;
     width: 80%;
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        display: none;
+    }
+
+    #terminal-area {
+        border-width: 1.2px;
+        clip-path:none;
+    }
+
+    :root {
+        font-size: 10px;
+    }
+
+    .terminal {
+        --size: 0.8;
+    }
+
+    .text-area_ {
+        height: 90%;
+        width: 90%;
+    }
 
 }
 
